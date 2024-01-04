@@ -5,6 +5,8 @@ document.querySelector("#sampah-menu").onclick = () => {
   navbarNav.classList.toggle("active");
 };
 
+
+
 // Toggle class active untuk search form
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
@@ -54,7 +56,7 @@ itemDetailButtons.forEach((btn) => {
 
 // klik tombol close modal
 document.querySelector('.modal .close-icon').onclick = (e) => {
-  itemDetailModal.style.display = "none";
+  itemDetailModal.style.display = 'none';
 };
 
 // Klik di luar modal
