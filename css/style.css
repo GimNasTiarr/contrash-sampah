@@ -317,8 +317,6 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  background-image: url(8.jpg);
-  background-color: #666;
   background-position: center;
   background-size: cover;
 }
@@ -329,7 +327,7 @@ body {
 }
 
 .login-header header{
-  color: #fff;
+  color: #000000;
   font-size: 40px;
   font-weight: 600;
 }
@@ -366,7 +364,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: #fff;
+  color: #000000;
 }
 
 #check {
@@ -400,7 +398,7 @@ body {
   position: absolute;
   top: 45%;
   left: 50%;
-  color: #fff;
+  color: #160101;
   -webkitanimation: translate(-50%, -50%);
   -mstransform: translate(-50%, -50%);
   cursor: pointer;
@@ -644,6 +642,7 @@ footer .sosials {
 footer .sosials a {
   color: #fff;
   margin: 1rem;
+  font-size: 30px;
 }
 
 footer .sosials a:hover,

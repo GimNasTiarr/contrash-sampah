@@ -12,7 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
-    
+
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Feather icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -73,7 +76,7 @@
           </div>
         </div>
       </template>
-      <h4 x-show="!$store.cart.items.length" style="margin-top: 1rem;">Cart Is Empty</h4>
+      <h4 x-show="!$store.cart.items.length" style="margin-top: 1rem;">Keranjang Masih Kosong</h4>
       <h4 x-show="$store.cart.items.length">Total : <span x-text="rupiah($store.cart.total)"></span></h4>
 
       <div class="form-container" x-show="$store.cart.items.length">
@@ -291,9 +294,11 @@
     <!-- Footer start -->
     <footer>
       <div class="sosials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+        
+        <a href="#"><i class='bx bxl-apple'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="#"><i class='bx bxl-play-store' ></i></a>
       </div>
 
       <div class="links">
