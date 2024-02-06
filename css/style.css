@@ -254,6 +254,23 @@ body {
   position: relative;
 }
 
+.Kumpulkan {
+  font-size: 3rem;
+  animation: loncatloncat 4s infinite;
+}
+
+@keyframes loncatloncat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .hero::after {
   content: "";
   display: block;
@@ -304,7 +321,7 @@ body {
 }
 
 /* Login section */
-.login .row {
+/* .login .row { 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -421,11 +438,11 @@ body {
 
 .sign-up-link p {
   color: #fff;
-}
+} */
 
 
 /* About Section */
-.login,
+/* .login, */
 .about,
 .menu,
 .products,
@@ -442,7 +459,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.login header span,
+/* .login header span, */
 .about h2 span,
 .menu h2 span,
 .products h2 span,
@@ -459,6 +476,7 @@ body {
 }
 
 .about .row .about-img img {
+  border-radius: 10%;
   width: 100%;
 }
 
@@ -557,6 +575,7 @@ body {
 }
 
 .products .product-image img {
+  border-radius: 10%;
   height: 25rem;
 }
 

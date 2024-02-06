@@ -8,10 +8,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-      rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"
     />
+    <link rel="icon" href="img/logo1.jpg">
 
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -36,7 +35,7 @@
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
-        <a href="#login">Login</a>
+        <!-- <a href="#login">Login</a> -->
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Jenis Sampah</a>
         <a href="#products">Setor Sampahmu</a>
@@ -44,6 +43,7 @@
       </div>
 
       <div class="navbar-extra">
+        <a href="login.html" id="log-in-button"><i data-feather="log-in"></i></a>
         <a href="#" id="search-button"><i data-feather="search"></i></a>
         <a href="#" id="shopping-cart-button">
           <i data-feather="shopping-cart"></i>
@@ -111,7 +111,7 @@
     <!-- Hero Section start -->
     <section class="hero" id="home">
       <main class="content">
-        <h1>Ayo Kumpulkan <span>SampahMu</span></h1>
+        <h1 class="Kumpulkan">Ayo Kumpulkan <span>SampahMu</span></h1>
         <p>Kumpulkan Sampahmu dan Tukarkan Poinmu</p>
         <a href="#" class="cta">Mulai Sekarang</a>
       </main>
@@ -119,7 +119,7 @@
     <!-- Hero Section end -->
 
     <!-- Login -->
-    <section id="login" class="login">
+    <!-- <section id="login" class="login">
     <div class="row">
       <div class="login-box">
         <div class="login-header">
@@ -138,18 +138,17 @@
               <label for="check">Remember me</label>
             </section>
             <section>
-              <a href="#">Forgot password?</a>
+              <a href="#">Sign Up</a>
             </section>
           </div>
           <div class="Input-submit">
           </div>
       </div>
     </div>
-    </section>
+    </section> -->
     <!-- About Section start -->
     <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
-
+      <h2 class="Kumpulkan"><span>Tentang</span> Kami</h2>
       <div class="row">
         <div class="about-img">
           <img src="img/tentang-kami.jpg" alt="Tentang Kami" />
@@ -157,11 +156,8 @@
         <div class="content">
           <h3>Kenapa memilih jasa kami</h3>
           <p>
-            Dengan memakai jasa contras maka bisa mengedukasi para pengguna
-            mengenai pengelolaan sampah. Selain itu, dengan menggunakan jasa ini
-            maka sampah bisa diolah dan dikelola dengan baik sehingga sampah
-            dapat diatasi dengan aman dan bersih.
-          </p>
+Dengan memanfaatkan jasa kontraktor pengelolaan sampah, kita tidak hanya dapat memperoleh keuntungan praktis dalam pengelolaan sampah, tetapi juga memberikan kontribusi positif terhadap edukasi masyarakat mengenai pentingnya pengelolaan sampah yang baik.<br> Kontraktor pengelolaan sampah memiliki peran krusial dalam menyebarkan pengetahuan dan kesadaran terhadap praktik pengelolaan sampah yang ramah lingkungan.<br>
+Melalui program edukasi yang diselenggarakan oleh kontraktor, para pengguna dapat memahami dampak negatif sampah terhadap lingkungan dan kesehatan manusia.<br> Informasi ini dapat mencakup cara memilah sampah, prinsip daur ulang, dan upaya-upaya lain yang dapat dilakukan untuk mengurangi jejak karbon dan meminimalkan dampak negatif sampah terhadap ekosistem.<br>Tidak hanya itu, dengan menggunakan jasa kontraktor pengelolaan sampah, proses pengelolaan sampah dapat dilakukan secara efisien dan aman. 
         </div>
       </div>
     </section>
@@ -169,7 +165,7 @@
 
     <!-- Menu Section start -->
     <section id="menu" class="menu">
-      <h2><span>Jenis</span> Sampah</h2>
+      <h2 class="Kumpulkan"><span>Jenis</span> Sampah</h2>
       <p>ini Adalah Jenis Sampah Yang Dapat kami Olah</p>
 
       <div class="row">
@@ -208,7 +204,7 @@
 
     <!-- Products Section start -->
     <section class="products" id="products" x-data="products">
-      <h2><span>Sampah yang</span> kami terima</h2>
+      <h2 class="Kumpulkan"><span>Sampah yang</span> kami terima</h2>
       <p>
         Berikut Adalah Sampah Yang Kami Tampung Atau Sampah Yang Kami Terima
       </p>
@@ -260,7 +256,7 @@
 
     <!-- Contact Section start -->
     <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
+      <h2 class="Kumpulkan"><span>Kontak</span> Kami</h2>
 
       <div class="row">
         <iframe
@@ -284,8 +280,10 @@
             <i data-feather="phone"></i>
             <input type="text" placeholder="no hp" />
           </div>
-          <button type="submit" class="btn">kirim pesan</button>
+          <div class="btn">
+            <a href="https:gimnastiartiar681@gmail.com" target="_blank">kirim pesan</a>
         </form>
+        
       </div>
     </section>
 
@@ -295,15 +293,15 @@
     <footer>
       <div class="sosials">
         
-        <a href="#"><i class='bx bxl-apple'></i></a>
+        <a href="https://youtube.com/@gimnastiarGG" target="_blank"><i class='bx bxl-youtube'></i></a>
         <a href="#"><i class='bx bxl-twitter'></i></a>
-        <a href="#"><i class='bx bxl-instagram'></i></a>
+        <a href="https://instagram.com/gim.nastiarr_" target="_blank"><i class='bx bxl-instagram'></i></a>
         <a href="#"><i class='bx bxl-play-store' ></i></a>
       </div>
 
       <div class="links">
         <a href="#home">Home</a>
-        <a href="#login">Login</a>
+        <!-- <a href="#login">Login</a> -->
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Jenis Sampah</a>
         <a href="#products">Setor Sampahmu</a>

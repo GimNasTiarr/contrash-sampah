@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="icon" href="img/logo1.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"
+    />
+
+    <style>  
+
+      :root {
+        --primary: #20ea05;
+        --bg: #f1f4ef;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-image: url("img/background.jpg");
+      }
+
+      .login-container {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .login-container h2 {
+        text-align: center;
+        color: #333;
+        animation: login-container 3s infinite;
+      }
+
+      @keyframes login-container {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+      }
+
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        background-color: #20ea05;;
+        color: #fff;
+        border: none;
+        box-shadow: 0 0 15px 5px #333;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .form-group button:hover {
+        background-color: transparent;
+        color: black;
+        box-shadow: 0 0 10px 0 #333;
+        transition: 0.5s all ease-in-out;
+      }
+
+      .forgot {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        color: black;
+        margin-bottom: 50px;
+      }
+
+      .login-container h2 span {
+        color: var(--primary);
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Log-<span>in</span></h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <input type="text" id="username" placeholder ="Email" autocomplete="off" required />
+        </div>
+        <div class="form-group">
+          <input type="password" id="password" placeholder ="Password" autocomplete="off" required />
+        </div>
+        <div class="form-group">
+          <button type="button" onclick="validateLogin()">Login</button>
+        </div>
+      </form>
+      <div class="loncat">
+        <div class="forgot">
+          <section>
+            <label for="check">Don't have an account?</label>
+          </section>
+        <div class="register">
+          <section>
+            <a href="registrasi.html">Sign Up</a>
+          </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function validateLogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        // Contoh validasi sederhana, Anda dapat menggantinya sesuai kebutuhan.
+        if (username === "user" && password === "password") {
+          alert("Login berhasil!");
+          // Di sini Anda bisa mengarahkan pengguna ke halaman lain atau melakukan tindakan lainnya.
+        } else {
+          alert("Login gagal. Periksa kembali username dan password Anda.");
+        }
+      }
+    </script>
+  </body>
+</html>
