@@ -7,7 +7,8 @@
     <link rel="icon" href="img/logo1.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"
     />
-
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
     <style>  
 
       :root {
@@ -17,19 +18,47 @@
 
       body {
         font-family: "Poppins", sans-serif;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        margin: 0;
-        background-image: url("img/background.jpg");
+        min-height: 100vh;
+        background: rgb(207,255,150);
+        background: linear-gradient(90deg, rgba(207,255,150,1) 0%, rgba(250,255,46,1) 0%, rgba(0,255,54,1) 100%);
+        /* background-image: url("img/background.jpg"); */
       }
+
+      /* body::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        bottom: 0;
+        background: linear-gradient(
+        0deg,
+        rgba(1, 1, 3, 1) 8%,
+        rgba(255, 255, 255, 0) 50%
+      );
+      } */
+      
 
       .login-container {
         background-color: #fff;
         padding: 50px;
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-size: 15px;
+      }
+
+      .login-container i {
+        font-size: 30px;
+        margin: -3rem;
+        color: #555;
+      }
+
+      .login-container i:hover {
+        color: var(--primary)
       }
 
       .login-container h2 {
@@ -122,9 +151,9 @@
 
       
     </style>
-  </head>
   <body>
-    <div class="login-container">
+      <div class="login-container">
+      <a href="index.html"><i class='bx bx-chevrons-left'></i></a>
       <h2>Log-<span>in</span></h2>
       <form id="loginForm">
         <div class="form-group">

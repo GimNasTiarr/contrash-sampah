@@ -8,10 +8,12 @@
     <link rel="icon" href="/img/logo1.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
         <form id="registrationForm">
+            <a href="login.html"><i class='bx bx-chevrons-left'></i></a>
             <h2>Regist<span>ration</span></h2>
             
             <input type="text" id="username" name="username" placeholder="Username" autocomplete="off" required>
@@ -44,8 +46,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-image: url("img/register.jpg");
+    min-height: 100vh;
+    background: rgb(207,255,150);
+    background: linear-gradient(90deg, rgba(207,255,150,1) 0%, rgba(250,255,46,1) 0%, rgba(0,255,54,1) 100%);
+    /* background-image: url("img/register.jpg"); */
 }
 
 .container {
@@ -53,6 +57,7 @@ body {
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
 }
 
 .container h2 {
@@ -130,6 +135,16 @@ button:hover {
       html {
       font-size: 55%;
       }
+    }
+
+    .container i {
+        font-size: 30px;
+        margin: -3rem;
+        color: #555
+    }
+
+    .container i:hover {
+        color: var(--primary)
     }
 
 </style>
